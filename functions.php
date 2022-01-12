@@ -235,7 +235,7 @@ function wpdocs_remove_menus(){
 add_action( 'admin_menu', 'wpdocs_remove_menus' );
 /*-google-map-*/
 function my_acf_google_map_api( $api ){  
-    $api['key'] = 'AIzaSyBi5JKMIFAOuTA6yLqMEQUBsmAL055b0LA';   
+    $api['key'] = '';   
     return $api;   
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
@@ -244,7 +244,7 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 function get_lat_long($address){
   $address = str_replace(" ", "+", $address);
   $address = str_replace(",", "+", $address);
-  $json = file_get_contents("https://maps.google.com/maps/api/geocode/json?address=$address&language=nl&key=AIzaSyBi5JKMIFAOuTA6yLqMEQUBsmAL055b0LA");
+  $json = file_get_contents("https://maps.google.com/maps/api/geocode/json?address=$address&language=nl&key=");
   $json = json_decode($json);
 
   if(!empty($json->{'results'})) {
