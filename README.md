@@ -8,5 +8,5 @@ Created a custom search functionality in the Wordpress website. It uses the Goog
 
 ## Technology Stack
 
--[x] Wordpress
--[x] Google Maps API
+- [x] Wordpress
+- [x] Google Maps API
