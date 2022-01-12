@@ -4,7 +4,7 @@
 
 Created a custom search functionality in the Wordpress website. It uses the Google Maps with the ability to filter and list search results on Google Map. 
 
-
+![Screenshot](https://github.com/tbiinfotech/wordpress-custom-search-google-map/blob/main/Images/Shop.png)
 
 ## Technology Stack
 
